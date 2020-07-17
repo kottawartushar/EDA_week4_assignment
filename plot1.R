@@ -14,9 +14,10 @@ names(yearSum)[1] <- "year"
 names(yearSum)[2] <- "total_emissions"
 yearSum
 
-dev.copy(png, file = "plot1.png", width = 480, height = 480)
 
 plot(yearSum$year, yearSum$total_emissions, xlab = "Year", ylab = "Total Emissions", 
      col = "blue", type = "l")
+
+dev.copy(png, file = "plot1.png", width = 480, height = 480)
 
 dev.off()
